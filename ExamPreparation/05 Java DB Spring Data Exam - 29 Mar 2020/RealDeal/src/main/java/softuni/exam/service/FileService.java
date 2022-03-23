@@ -4,7 +4,8 @@ import javax.xml.bind.JAXBException;
 import java.io.IOException;
 
 public interface FileService {
-    <T> T readJsonFile(String filePath, Class<T> clazz) throws IOException;
+    String readString(String fileName) throws IOException;
+    <T>  T readJsonFile(String filePath, Class<T> clazz) throws IOException;
 
     <T> void writeToJsonFile(String filePath, T record) throws IOException;
 

@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import softuni.exam.util.ValidationUtil;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 
@@ -29,12 +30,11 @@ public class ApplicationBeanConfiguration {
     public ModelMapper modelMapper() {
         ModelMapper mapper = new ModelMapper();
 
-        mapper.addConverter(new Converter<String, LocalDate>() {
-            @Override
-            public LocalDate convert(MappingContext<String, LocalDate> mappingContext) {
-                return LocalDate.parse(mappingContext.getSource(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-            }
-        });
+        mapper.addConverter((Converter<String, LocalDate>) mappingContext ->
+                LocalDate.parse(mappingContext.getSource(), DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+
+        mapper.addConverter((Converter<String, LocalDateTime>) mappingContext ->
+                LocalDateTime.parse(mappingContext.getSource(), DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
 
         return mapper;
     }

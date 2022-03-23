@@ -10,12 +10,19 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 @Service
 public class FileServiceImpl implements FileService {
     private final Gson gson;
     public FileServiceImpl(Gson gson) {
         this.gson = gson;
+    }
+
+    @Override
+    public String readString(String fileName) throws IOException {
+        return Files.readString(Path.of(fileName));
     }
 
     @Override

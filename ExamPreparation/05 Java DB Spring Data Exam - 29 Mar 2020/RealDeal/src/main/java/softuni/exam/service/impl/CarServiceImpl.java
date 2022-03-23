@@ -11,10 +11,8 @@ import softuni.exam.service.FileService;
 import softuni.exam.util.ValidationUtil;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.Arrays;
-import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -40,32 +38,41 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public String readCarsFileContent() throws IOException {
-        return Files.readString(Path.of(CARS_FILE_PATH));
+        return fileService.readString(CARS_FILE_PATH);
     }
 
     @Override
     public String importCars() throws IOException {
-        StringBuffer response = new StringBuffer();
-        List<Car> cars = Arrays.stream(
-                        this.fileService
-                                .readJsonFile(CARS_FILE_PATH, CarSeedDto[].class))
-                .filter(c -> {
-                    boolean valid = this.validator.isValid(c);
-                    response.append(valid ? String.format("Successfully imported car - %s %s", c.getMake(), c.getModel())
-                                    : "Invalid car")
-                            .append(System.lineSeparator());
-                    return valid;
-                })
-                .map(c -> this.mapper.map(c, Car.class))
-                .collect(Collectors.toList());
+        StringBuilder response = new StringBuilder();
         this.repository.saveAll(
-                cars);
+                Arrays.stream(this.fileService.readJsonFile(CARS_FILE_PATH, CarSeedDto[].class))
+                        .map(c -> appendResponseMessage(response, c))
+                        .filter(this.validator::isValid)
+                        .map(c -> this.mapper.map(c, Car.class))
+                        .collect(Collectors.toList()));
+
         return response.toString().trim();
+    }
+
+    private CarSeedDto appendResponseMessage(StringBuilder response, CarSeedDto car) {
+        String message;
+        if (this.validator.isValid(car)) {
+            message = String.format("Successfully imported car - %s %s", car.getMake(), car.getModel());
+        } else {
+            message = "Invalid car";
+        }
+        response.append(message).append(System.lineSeparator());
+        return car;
     }
 
 
     @Override
     public String getCarsOrderByPicturesCountThenByMake() {
         return null;
+    }
+
+    @Override
+    public Optional<Car> getCar(Long id) {
+        return this.repository.findById(id);
     }
 }
