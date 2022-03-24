@@ -1,9 +1,11 @@
 package softuni.exam.service;
 
+import softuni.exam.models.entities.Seller;
+
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
+import java.util.Optional;
 
-//ToDo - Before start App implement this Service and set areImported to return false
 public interface SellerService {
     
     boolean areImported();
@@ -12,4 +14,5 @@ public interface SellerService {
 
     String importSellers() throws IOException, JAXBException;
 
+    Optional<Seller> getSeller(long id);
 }

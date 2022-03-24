@@ -1,4 +1,4 @@
-package softuni.exam.service;
+package com.example.football.service;
 
 import javax.xml.bind.JAXBException;
 import java.io.IOException;

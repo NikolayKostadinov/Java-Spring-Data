@@ -1,9 +1,9 @@
-package softuni.exam.service.impl;
+package com.example.football.service.impl;
 
+import com.example.football.service.FileService;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 import org.springframework.stereotype.Service;
-import softuni.exam.service.FileService;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

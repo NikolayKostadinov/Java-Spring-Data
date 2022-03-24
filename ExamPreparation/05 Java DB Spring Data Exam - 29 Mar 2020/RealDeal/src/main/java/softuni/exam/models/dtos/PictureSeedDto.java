@@ -3,7 +3,6 @@ package softuni.exam.models.dtos;
 import com.google.gson.annotations.Expose;
 
 import javax.validation.constraints.Size;
-import java.time.LocalDateTime;
 
 public class PictureSeedDto {
     @Expose

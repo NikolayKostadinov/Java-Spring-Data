@@ -1,11 +1,17 @@
 package com.example.football.service;
 
-//ToDo - Implement all methods
+import com.example.football.models.entity.Stat;
+
+import javax.xml.bind.JAXBException;
+import java.io.IOException;
+import java.util.Optional;
+
 public interface StatService {
     boolean areImported();
 
-    String readStatsFileContent() ;
+    String readStatsFileContent() throws IOException;
 
-    String importStats() ;
+    String importStats() throws JAXBException, IOException;
 
+    Optional<Stat> getStatById(long id);
 }

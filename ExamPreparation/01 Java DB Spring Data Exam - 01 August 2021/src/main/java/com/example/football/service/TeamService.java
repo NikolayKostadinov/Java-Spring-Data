@@ -1,11 +1,17 @@
 package com.example.football.service;
 
-//ToDo - Implement all methods
+import com.example.football.models.entity.Team;
+
+import java.io.IOException;
+import java.util.Optional;
+
 public interface TeamService {
+
     boolean areImported();
 
-    String readTeamsFileContent() ;
+    String readTeamsFileContent() throws IOException;
 
-    String importTeams() ;
+    String importTeams() throws IOException;
 
+    Optional<Team> getTeamByName(String name);
 }
