@@ -1,5 +1,6 @@
 package com.example.football.service.impl;
 
+import com.example.football.models.dto.BestPlayerDto;
 import com.example.football.models.dto.PlayerSeedDto;
 import com.example.football.models.dto.PlayerSeedRootDto;
 import com.example.football.models.entity.Player;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
+import java.util.stream.Collectors;
 
 //ToDo - Implement all methods
 @Service
@@ -84,6 +86,10 @@ public class PlayerServiceImpl implements PlayerService {
 
     @Override
     public String exportBestPlayers() {
-        return null;
+
+        return this.repository.findBestPlayers()
+                .stream()
+                .map(BestPlayerDto::toString)
+                .collect(Collectors.joining(System.lineSeparator()));
     }
 }
