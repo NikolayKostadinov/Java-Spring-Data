@@ -24,7 +24,11 @@ public class TownServiceImpl implements TownService {
     private final ValidationUtil validator;
     private final ModelMapper mapper;
 
-    public TownServiceImpl(TownRepository repository, FileService fileService, MessageService messageService, ValidationUtil validator, ModelMapper mapper) {
+    public TownServiceImpl(TownRepository repository,
+                           FileService fileService,
+                           MessageService messageService,
+                           ValidationUtil validator,
+                           ModelMapper mapper) {
         this.repository = repository;
         this.fileService = fileService;
         this.messageService = messageService;
