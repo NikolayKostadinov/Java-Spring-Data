@@ -1,4 +1,4 @@
-package com.example.football.models.entity;
+package exam.model.entity;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

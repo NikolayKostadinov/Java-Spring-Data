@@ -52,13 +52,23 @@ public class TownServiceImpl implements TownService {
         StringBuilder response = new StringBuilder();
         this.repository.saveAll(
                 Arrays.stream(this.fileService.readJsonFile(TOWNS_FILE_PATH, TownSeedDto[].class))
-                        .map(town -> messageService
+                        .peek(townSeedDto -> {
+                            if (exists(townSeedDto)) {
+                                response.append("Invalid Stat");
+                            }
+                        })
+                        .filter(seedDto -> !exists(seedDto))
+                        .peek(town -> messageService
                                 .addMessage(response, town, String.format("%s - %d", town.getName(), town.getPopulation())))
                         .filter(this.validator::isValid)
                         .map(town -> this.mapper.map(town, Town.class))
                         .collect(Collectors.toList())
         );
         return response.toString().trim();
+    }
+
+    private boolean exists(TownSeedDto seedDto) {
+        return this.repository.findOneByName(seedDto.getName()).isPresent();
     }
 
     @Override

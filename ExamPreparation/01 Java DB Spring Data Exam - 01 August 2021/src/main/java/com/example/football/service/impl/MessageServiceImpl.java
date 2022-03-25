@@ -13,7 +13,7 @@ public class MessageServiceImpl implements MessageService {
     }
 
     @Override
-    public  <T> T addMessage(StringBuilder response, T dto, String additionalMessage) {
+    public  <T> void addMessage(StringBuilder response, T dto, String additionalMessage) {
         String message;
         if (this.validator.isValid(dto)) {
             message = String.format("Successfully imported %s %s", dto.getClass().getSimpleName(), additionalMessage);
@@ -21,7 +21,5 @@ public class MessageServiceImpl implements MessageService {
             message = String.format("Invalid %s", dto.getClass().getSimpleName());
         }
         response.append(message).append(System.lineSeparator());
-
-        return dto;
     }
 }

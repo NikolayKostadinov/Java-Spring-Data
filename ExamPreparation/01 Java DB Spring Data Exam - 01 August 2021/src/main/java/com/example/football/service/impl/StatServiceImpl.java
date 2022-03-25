@@ -15,6 +15,7 @@ import javax.transaction.Transactional;
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class StatServiceImpl implements StatService {
@@ -51,22 +52,22 @@ public class StatServiceImpl implements StatService {
     @Transactional
     public String importStats() throws JAXBException, IOException {
         StringBuilder response = new StringBuilder();
-        this.fileService.readXmlFile(STATS_FILE_PATH, StatSeedRootDto.class)
-                .getStats()
-                .stream()
-                .filter(seedDto -> {
-                    boolean exists = exists(seedDto);
-                    if (exists) {
-                        response.append("Invalid Stat");
-                    }
-                    return !exists;
-                })
-                .map(statDto -> messageService
-                        .addMessage(response, statDto, String.format("%.2f - %.2f - %.2f", statDto.getPassing(),
-                                statDto.getShooting(), statDto.getEndurance())))
-                .filter(this.validator::isValid)
-                .map(statDto -> this.mapper.map(statDto, Stat.class) )
-                .forEach(this.repository::save);
+        this.repository.saveAll(
+                this.fileService.readXmlFile(STATS_FILE_PATH, StatSeedRootDto.class)
+                        .getStats()
+                        .stream()
+                        .peek(statSeedDto -> {
+                            if (exists(statSeedDto)) {
+                                response.append("Invalid Stat");
+                            }
+                        })
+                        .filter(statSeedDto -> !this.exists(statSeedDto))
+                        .peek(statDto -> messageService
+                                .addMessage(response, statDto, String.format("%.2f - %.2f - %.2f", statDto.getPassing(),
+                                        statDto.getShooting(), statDto.getEndurance())))
+                        .filter(this.validator::isValid)
+                        .map(statDto -> this.mapper.map(statDto, Stat.class))
+                        .collect(Collectors.toList()));
         return response.toString().trim();
     }
 
