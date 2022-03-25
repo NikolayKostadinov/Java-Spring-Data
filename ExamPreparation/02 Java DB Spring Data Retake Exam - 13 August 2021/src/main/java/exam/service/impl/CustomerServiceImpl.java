@@ -2,11 +2,10 @@ package exam.service.impl;
 
 import exam.model.dto.CustomerSeedDto;
 import exam.model.entity.Customer;
-import exam.model.entity.Shop;
 import exam.repository.CustomerRepository;
 import exam.service.CustomerService;
-import exam.service.FileService;
-import exam.service.MessageService;
+import exam.util.FileService;
+import exam.util.MessageService;
 import exam.service.TownService;
 import exam.util.ValidationUtil;
 import org.modelmapper.ModelMapper;
@@ -58,7 +57,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     private String persistIfValid(CustomerSeedDto customer) {
-        boolean isValid = this.validator.isValid(customer, s -> repository.existsByEmail(s.getEmail()));
+        boolean isValid = this.validator.isValid(customer, s -> !repository.existsByEmail(s.getEmail()));
         String message = this.messageService.getMessage(customer, isValid);
         if (isValid){
             Customer dbCustomer = this.mapper.map(customer, Customer.class);

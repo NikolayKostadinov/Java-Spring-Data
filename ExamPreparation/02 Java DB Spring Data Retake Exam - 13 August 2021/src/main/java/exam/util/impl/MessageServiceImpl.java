@@ -1,11 +1,15 @@
-package exam.service.impl;
+package exam.util.impl;
 
-import exam.service.MessageService;
 import exam.util.MessageName;
+import exam.util.MessageService;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 @Service
+@Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class MessageServiceImpl implements MessageService {
+
     @Override
     public <T> String getMessage(T dto, boolean isValid) {
         String message;

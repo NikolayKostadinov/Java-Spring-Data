@@ -54,7 +54,7 @@ public class ShopSeedDto {
      * accepts number values that are between 1 and 50
      * (Larger than or equal to 1 and less than or equal to 50).
      */
-    @Min(5)
+    @Min(1)
     @Max(50)
     public int getEmployeeCount() {
         return employeeCount;

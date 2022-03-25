@@ -4,8 +4,8 @@ import exam.model.dto.TownSeedDto;
 import exam.model.dto.TownSeedRootDto;
 import exam.model.entity.Town;
 import exam.repository.TownRepository;
-import exam.service.FileService;
-import exam.service.MessageService;
+import exam.util.FileService;
+import exam.util.MessageService;
 import exam.service.TownService;
 import exam.util.ValidationUtil;
 import org.modelmapper.ModelMapper;
@@ -57,7 +57,7 @@ public class TownServiceImpl implements TownService {
     }
 
     private String persistIfValid(TownSeedDto town) {
-        boolean isValid = this.validator.isValid(town, t -> repository.existsByName(t.getName()));
+        boolean isValid = this.validator.isValid(town, t -> !repository.existsByName(t.getName()));
         String message = this.messageService.getMessage(town, isValid);
         if (isValid){
             this.repository.save(this.mapper.map(town, Town.class));

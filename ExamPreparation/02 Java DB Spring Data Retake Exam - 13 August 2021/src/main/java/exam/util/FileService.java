@@ -1,4 +1,4 @@
-package exam.service;
+package exam.util;
 
 import javax.xml.bind.JAXBException;
 import java.io.IOException;

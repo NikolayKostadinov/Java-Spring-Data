@@ -4,8 +4,8 @@ import exam.model.dto.ShopSeedDto;
 import exam.model.dto.ShopSeedRootDto;
 import exam.model.entity.Shop;
 import exam.repository.ShopRepository;
-import exam.service.FileService;
-import exam.service.MessageService;
+import exam.util.FileService;
+import exam.util.MessageService;
 import exam.service.ShopService;
 import exam.service.TownService;
 import exam.util.ValidationUtil;
@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
-import java.text.DecimalFormat;
 import java.util.stream.Collectors;
 
 @Service
@@ -67,7 +66,7 @@ public class ShopServiceImpl implements ShopService {
     }
 
     private String persistIfValid(ShopSeedDto shop) {
-        boolean isValid = this.validator.isValid(shop, s -> repository.existsByName(s.getName()));
+        boolean isValid = this.validator.isValid(shop, s -> !repository.existsByName(s.getName()));
         String message = this.messageService.getMessage(shop, isValid);
         if (isValid){
             Shop dbShop = this.mapper.map(shop, Shop.class);

@@ -3,6 +3,8 @@ package exam.config;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import exam.model.entity.enums.WarrantyType;
+import exam.util.MessageService;
+import exam.util.impl.MessageServiceImpl;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;

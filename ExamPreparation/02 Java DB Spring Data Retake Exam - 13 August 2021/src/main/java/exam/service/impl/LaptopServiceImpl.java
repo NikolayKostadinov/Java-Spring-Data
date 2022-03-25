@@ -1,12 +1,13 @@
 package exam.service.impl;
 
+import exam.model.dto.LaptopListDto;
 import exam.model.dto.LaptopSeedDto;
 import exam.model.entity.Laptop;
 import exam.model.entity.Shop;
 import exam.repository.LaptopRepository;
-import exam.service.FileService;
+import exam.util.FileService;
 import exam.service.LaptopService;
-import exam.service.MessageService;
+import exam.util.MessageService;
 import exam.service.ShopService;
 import exam.util.ValidationUtil;
 import org.modelmapper.ModelMapper;
@@ -59,25 +60,23 @@ public class LaptopServiceImpl implements LaptopService {
     }
 
     private String persistIfValid(LaptopSeedDto laptop) {
-        String ANSI_RESET = "\u001B[0m";
-        String ANSI_RED = "\u001B[31m";
-        boolean isValid = this.validator.isValid(laptop, s -> repository.existsByMacAddress(s.getMacAddress()));
+        boolean isValid = this.validator.isValid(laptop, s -> !repository.existsByMacAddress(s.getMacAddress()));
         String message = this.messageService.getMessage(laptop, isValid);
         if (isValid) {
             Laptop dbLaptop = this.mapper.map(laptop, Laptop.class);
             Shop shop = shopService.getByName(laptop.getShop().getName());
-            if (shop == null) {
-               message = ANSI_RED + "Invalid shop " + laptop.getShop().getName() + ANSI_RESET;
-            } else {
-                dbLaptop.setShop(shop);
-                this.repository.save(dbLaptop);
-            }
+            dbLaptop.setShop(shop);
+            this.repository.save(dbLaptop);
         }
         return message;
     }
 
     @Override
     public String exportBestLaptops() {
-        return null;
+        return repository.findAllByOrderByCpuSpeedDescRamDescStorageDescMacAddressAsc()
+                .stream()
+                .map(l -> this.mapper.map(l, LaptopListDto.class))
+                .map(LaptopListDto::toString)
+                .collect(Collectors.joining(System.lineSeparator()));
     }
 }

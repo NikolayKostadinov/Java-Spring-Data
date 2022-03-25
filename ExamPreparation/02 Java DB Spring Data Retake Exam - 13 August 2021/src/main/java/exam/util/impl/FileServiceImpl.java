@@ -1,8 +1,10 @@
-package exam.service.impl;
+package exam.util.impl;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
-import exam.service.FileService;
+import exam.util.FileService;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 import javax.xml.bind.JAXBContext;
@@ -14,6 +16,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 @Service
+@Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class FileServiceImpl implements FileService {
     private final Gson gson;
 

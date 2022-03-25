@@ -1,5 +1,6 @@
-package exam.util;
+package exam.util.impl;
 
+import exam.util.ValidationUtil;
 import org.springframework.stereotype.Service;
 
 import javax.validation.Validation;
@@ -19,6 +20,6 @@ public class ValidationUtilImpl implements ValidationUtil {
     public <E> boolean isValid(E entity, Predicate<E> isValid) {
         Validator validator = Validation
                 .buildDefaultValidatorFactory().getValidator();
-        return validator.validate(entity).isEmpty() && isValid(entity);
+        return validator.validate(entity).isEmpty() && isValid.test(entity);
     }
 }
