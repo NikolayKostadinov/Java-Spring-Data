@@ -57,11 +57,15 @@ public class TownServiceImpl implements TownService {
     }
 
     private String persistIfValid(TownSeedDto town) {
-        boolean isValid = this.validator.isValid(town, t -> !repository.existsByName(t.getName()));
+        boolean isValid = this.validator.isValid(town, this::isUnique);
         String message = this.messageService.getMessage(town, isValid);
         if (isValid){
             this.repository.save(this.mapper.map(town, Town.class));
         }
         return message;
+    }
+
+    private boolean isUnique(TownSeedDto t) {
+        return !repository.existsByName(t.getName());
     }
 }

@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 @Service
@@ -60,14 +61,16 @@ public class LaptopServiceImpl implements LaptopService {
     }
 
     private String persistIfValid(LaptopSeedDto laptop) {
-        boolean isValid = this.validator.isValid(laptop, s -> !repository.existsByMacAddress(s.getMacAddress()));
+        boolean isValid = this.validator.isValid(laptop, this::isUnique);
         String message = this.messageService.getMessage(laptop, isValid);
+
         if (isValid) {
             Laptop dbLaptop = this.mapper.map(laptop, Laptop.class);
             Shop shop = shopService.getByName(laptop.getShop().getName());
             dbLaptop.setShop(shop);
             this.repository.save(dbLaptop);
         }
+
         return message;
     }
 
@@ -78,5 +81,9 @@ public class LaptopServiceImpl implements LaptopService {
                 .map(l -> this.mapper.map(l, LaptopListDto.class))
                 .map(LaptopListDto::toString)
                 .collect(Collectors.joining(System.lineSeparator()));
+    }
+
+    private boolean isUnique(LaptopSeedDto s) {
+        return !repository.existsByMacAddress(s.getMacAddress());
     }
 }

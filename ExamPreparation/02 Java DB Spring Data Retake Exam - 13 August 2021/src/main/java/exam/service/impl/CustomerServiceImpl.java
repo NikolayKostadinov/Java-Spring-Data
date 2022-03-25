@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 @Service
@@ -57,13 +58,19 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     private String persistIfValid(CustomerSeedDto customer) {
-        boolean isValid = this.validator.isValid(customer, s -> !repository.existsByEmail(s.getEmail()));
+        boolean isValid = this.validator.isValid(customer, this::isUnique);
         String message = this.messageService.getMessage(customer, isValid);
+
         if (isValid){
             Customer dbCustomer = this.mapper.map(customer, Customer.class);
             dbCustomer.setTown(townService.getTownByName(customer.getTown().getName()));
             this.repository.save(dbCustomer);
         }
+
         return message;
+    }
+
+    private boolean isUnique(CustomerSeedDto c) {
+        return !repository.existsByEmail(c.getEmail());
     }
 }

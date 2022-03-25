@@ -66,7 +66,7 @@ public class ShopServiceImpl implements ShopService {
     }
 
     private String persistIfValid(ShopSeedDto shop) {
-        boolean isValid = this.validator.isValid(shop, s -> !repository.existsByName(s.getName()));
+        boolean isValid = this.validator.isValid(shop, this::isUnique);
         String message = this.messageService.getMessage(shop, isValid);
         if (isValid){
             Shop dbShop = this.mapper.map(shop, Shop.class);
@@ -74,5 +74,9 @@ public class ShopServiceImpl implements ShopService {
             this.repository.save(dbShop);
         }
         return message;
+    }
+
+    private boolean isUnique(ShopSeedDto s) {
+        return !repository.existsByName(s.getName());
     }
 }
