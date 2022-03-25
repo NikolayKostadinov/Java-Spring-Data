@@ -23,7 +23,7 @@ public class Team extends BaseEntity{
     // than or
     //equal to 10.
 
-    @ManyToOne()
+    @ManyToOne(optional = false)
     private Town town;
 
     public Team() {

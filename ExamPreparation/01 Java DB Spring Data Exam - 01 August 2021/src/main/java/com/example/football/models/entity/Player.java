@@ -25,13 +25,13 @@ public class Player extends BaseEntity{
     @Enumerated(EnumType.ORDINAL)
     private Position position ; //– one of the following – ATT, MID, DEF.
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     private Town town;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     private Team team;
 
-    @OneToOne
+    @OneToOne(optional = false)
     @JoinColumn(name = "stat_id")
     private Stat stat;
 

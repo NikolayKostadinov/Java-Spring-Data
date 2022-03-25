@@ -19,13 +19,6 @@ public class Town extends BaseEntity{
     @Column(name = "travel_guide", nullable = false, columnDefinition = "TEXT")
     private String travelGuide; // length value higher than or equal to 10.
 
-    @OneToMany(mappedBy = "town")
-    private Set<Team> teams;
-
-    public Town() {
-        this.teams = new HashSet<>();
-    }
-
     public String getName() {
         return name;
     }
