@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.stream.Collectors;
 
 //ToDo - Implement all methods
@@ -55,28 +56,28 @@ public class PlayerServiceImpl implements PlayerService {
     @Override
     public String importPlayers() throws JAXBException, IOException {
         StringBuilder response = new StringBuilder();
-        this.fileService.readXmlFile(PLAYERS_FILE_PATH, PlayerSeedRootDto.class)
-                .getPlayers()
-                .stream()
-                .filter(playerDto -> {
-                    boolean exists = exists(playerDto);
-                    if (exists) {
-                        response.append("Invalid Stat");
-                    }
-                    return !exists;
-                })
-                .map(playerDto -> messageService
-                        .addMessage(response, playerDto, String.format("%s - %s - %s", playerDto.getFirstName(),
-                                playerDto.getLastName(), playerDto.getPosition())))
-                .filter(this.validator::isValid)
-                .map(playerSeedDto -> {
-                    Player player = this.mapper.map(playerSeedDto, Player.class);
-                    player.setTown(this.townService.getTownByName(player.getTown().getName()).orElse(null));
-                    player.setTeam(this.teamService.getTeamByName(player.getTeam().getName()).orElse(null));
-                    player.setStat(this.statService.getStatById(player.getStat().getId()).orElse(null));
-                    return player;
-                })
-                .forEach(this.repository::save);
+        this.repository.saveAll(
+                this.fileService.readXmlFile(PLAYERS_FILE_PATH, PlayerSeedRootDto.class)
+                        .getPlayers()
+                        .stream()
+                        .peek(playerSeedDto -> {
+                            if (exists(playerSeedDto)) {
+                                response.append("Invalid Stat");
+                            }
+                        })
+                        .filter(playerDto -> !exists(playerDto))
+                        .peek(playerDto -> messageService
+                                .addMessage(response, playerDto, String.format("%s - %s - %s", playerDto.getFirstName(),
+                                        playerDto.getLastName(), playerDto.getPosition())))
+                        .filter(this.validator::isValid)
+                        .map(playerSeedDto -> {
+                            Player player = this.mapper.map(playerSeedDto, Player.class);
+                            player.setTown(this.townService.getTownByName(player.getTown().getName()).orElse(null));
+                            player.setTeam(this.teamService.getTeamByName(player.getTeam().getName()).orElse(null));
+                            player.setStat(this.statService.getStatById(player.getStat().getId()).orElse(null));
+                            return player;
+                        })
+                        .collect(Collectors.toList()));
         return response.toString().trim();
     }
 
@@ -87,7 +88,7 @@ public class PlayerServiceImpl implements PlayerService {
     @Override
     public String exportBestPlayers() {
 
-        return this.repository.findBestPlayers()
+        return this.repository.findBestPlayersBornBetween(LocalDate.of(1995,01,01), LocalDate.of(2003,01,01))
                 .stream()
                 .map(BestPlayerDto::toString)
                 .collect(Collectors.joining(System.lineSeparator()));

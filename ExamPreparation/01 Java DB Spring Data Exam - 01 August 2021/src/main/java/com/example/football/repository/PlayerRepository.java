@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Repository
@@ -16,6 +17,7 @@ public interface PlayerRepository extends JpaRepository<Player, Long> {
             ".BestPlayerDto(p.firstName, p.lastName, p.position, t.name, t.stadiumName) " +
             "FROM Player p JOIN p.stat s " +
             "JOIN p.team t " +
+            "WHERE p.birthDate BETWEEN :begin AND :end " +
             "ORDER BY s.shooting DESC, s.passing DESC, s.endurance DESC, p.lastName")
-    List<BestPlayerDto> findBestPlayers();
+    List<BestPlayerDto> findBestPlayersBornBetween(LocalDate begin, LocalDate end);
 }

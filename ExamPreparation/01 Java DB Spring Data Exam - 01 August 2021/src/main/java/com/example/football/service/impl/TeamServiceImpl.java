@@ -16,7 +16,6 @@ import java.util.Arrays;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-//ToDo - Implement all methods
 @Service
 public class TeamServiceImpl implements TeamService {
     public static final String TEAMS_FILE_PATH = "src/main/resources/files/json/teams.json";
@@ -55,7 +54,13 @@ public class TeamServiceImpl implements TeamService {
         StringBuilder response = new StringBuilder();
         this.repository.saveAll(
         Arrays.stream(this.fileService.readJsonFile(TEAMS_FILE_PATH, TeamSeedDto[].class))
-                .map(team -> messageService
+                .peek(teamSeedDto -> {
+                    if (exists(teamSeedDto)) {
+                        response.append("Invalid Stat");
+                    }
+                })
+                .filter(teamSeedDto -> !exists(teamSeedDto))
+                .peek(team -> messageService
                         .addMessage(response, team, String.format("%s - %d", team.getName(), team.getFanBase())))
                 .filter(this.validator::isValid)
                 .map(team -> {
@@ -65,6 +70,10 @@ public class TeamServiceImpl implements TeamService {
                 })
                 .collect(Collectors.toList()));
         return response.toString().trim();
+    }
+
+    private boolean exists(TeamSeedDto teamSeedDto) {
+        return this.getTeamByName(teamSeedDto.getName()).isPresent();
     }
 
     @Override
