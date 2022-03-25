@@ -12,7 +12,7 @@ import java.util.List;
 public class StatSeedRootDto {
 
     @XmlElement(name="stat")
-    private List<StatSeedDto> stats;
+    private final List<StatSeedDto> stats;
 
     public StatSeedRootDto() {
         this.stats = new ArrayList<>();
