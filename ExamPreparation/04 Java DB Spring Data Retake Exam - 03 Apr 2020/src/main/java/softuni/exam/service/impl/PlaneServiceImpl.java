@@ -14,6 +14,7 @@ import softuni.exam.util.ValidationUtil;
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -56,6 +57,11 @@ public class PlaneServiceImpl implements PlaneService {
                 .stream()
                 .map(this::persistIfValid)
                 .collect(Collectors.joining(System.lineSeparator()));
+    }
+
+    @Override
+    public Optional<Plane> getByRegisterNumber(String registerNumber) {
+        return repository.findByRegisterNumber(registerNumber);
     }
 
     private String persistIfValid(PlaneSeedDto plane) {

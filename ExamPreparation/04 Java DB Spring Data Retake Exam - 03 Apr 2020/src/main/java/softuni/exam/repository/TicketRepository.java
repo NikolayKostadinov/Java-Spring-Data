@@ -6,5 +6,5 @@ import softuni.exam.models.entities.Ticket;
 
 @Repository
 public interface TicketRepository  extends JpaRepository<Ticket, Long>{
-
+    boolean existsBySerialNumber(String serialNumber);
 }

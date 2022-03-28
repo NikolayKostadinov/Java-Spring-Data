@@ -1,9 +1,8 @@
 package softuni.exam.models.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="passenger")
@@ -42,6 +41,13 @@ public class Passenger extends BaseEntity {
 
     @ManyToOne(optional = false)
     private Town town;
+
+    @OneToMany(mappedBy = "passenger", fetch = FetchType.EAGER)
+    private Set<Ticket> tickets;
+
+    public Passenger() {
+        this.tickets = new HashSet<>();
+    }
 
     public String getFirstName() {
         return firstName;
@@ -89,5 +95,13 @@ public class Passenger extends BaseEntity {
 
     public void setTown(Town town) {
         this.town = town;
+    }
+
+    public Set<Ticket> getTickets() {
+        return tickets;
+    }
+
+    public void setTickets(Set<Ticket> tickets) {
+        this.tickets = tickets;
     }
 }

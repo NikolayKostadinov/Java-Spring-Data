@@ -5,10 +5,13 @@ import com.google.gson.GsonBuilder;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
+import softuni.exam.models.dtos.PassengerListDto;
+import softuni.exam.models.entities.Passenger;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Collection;
 
 @Component
 public class ApplicationBeanConfiguration {

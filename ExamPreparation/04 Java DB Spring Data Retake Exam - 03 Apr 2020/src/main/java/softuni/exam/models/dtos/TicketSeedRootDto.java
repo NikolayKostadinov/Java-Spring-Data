@@ -11,13 +11,13 @@ import java.util.List;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class TicketSeedRootDto {
     @XmlElement(name="ticket")
-    private final List<TicketSeedDto> ticks;
+    private final List<TicketSeedDto> tickets;
 
     public TicketSeedRootDto() {
-        this.ticks = new ArrayList<>();
+        this.tickets = new ArrayList<>();
     }
 
-    public List<TicketSeedDto> getTicks() {
-        return ticks;
+    public List<TicketSeedDto> getTickets() {
+        return tickets;
     }
 }

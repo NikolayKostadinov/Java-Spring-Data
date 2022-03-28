@@ -2,8 +2,8 @@ package softuni.exam.service.impl;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
+import softuni.exam.models.dtos.PassengerListDto;
 import softuni.exam.models.dtos.PassengerSeedDto;
-import softuni.exam.models.dtos.TownSeedDto;
 import softuni.exam.models.entities.Passenger;
 import softuni.exam.models.entities.Town;
 import softuni.exam.repository.PassengerRepository;
@@ -65,7 +65,7 @@ public class PassengerServiceImpl implements PassengerService {
         boolean isValid = this.validator.isValid(passenger, this::isUnique) && town.isPresent();
         String message = this.messageService.getMessage(passenger, isValid);
 
-        if (isValid){
+        if (isValid) {
             Passenger dbPassenger = this.mapper.map(passenger, Passenger.class);
             dbPassenger.setTown(town.get());
             this.repository.save(dbPassenger);
@@ -80,6 +80,15 @@ public class PassengerServiceImpl implements PassengerService {
 
     @Override
     public String getPassengersOrderByTicketsCountDescendingThenByEmail() {
-        return null;
+        return repository.findAllPassengersOrderByTicketsSizeDescAndEmailAsc()
+                .stream()
+                .map(PassengerListDto::toString)
+                .collect(Collectors.joining(System.lineSeparator()));
+
+    }
+
+    @Override
+    public Optional<Passenger> getByEmail(String email) {
+        return repository.findByEmail(email);
     }
 }
