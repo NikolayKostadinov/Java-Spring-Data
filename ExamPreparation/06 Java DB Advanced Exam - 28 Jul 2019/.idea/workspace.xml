@@ -5,104 +5,113 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb4105c1-2d22-46a0-91c2-5103b134d8ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/06b1f3d6-345a-4dd0-81f4-5400c9be5aeb.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/06b1f3d6-345a-4dd0-81f4-5400c9be5aeb/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/06b1f3d6-345a-4dd0-81f4-5400c9be5aeb/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/06b1f3d6-345a-4dd0-81f4-5400c9be5aeb/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/06b1f3d6-345a-4dd0-81f4-5400c9be5aeb/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/Football-Info_Problem Description.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/ExamApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/ServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/config/ApplicationBeanConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/dtos/PictureSeedDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/dtos/PictureSeedRootDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/dtos/PlayerBySalaryListDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/dtos/PlayerByTeamListDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/dtos/PlayerPictureDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/dtos/PlayerSeedDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/dtos/PlayerTeamDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/dtos/PlayerTeamPictureDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/dtos/TeamPictureDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/dtos/TeamSeedDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/dtos/TeamSeedRootDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/entities/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/entities/Picture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/entities/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/entities/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/entities/enums/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/repository/PictureRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/repository/PlayerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/repository/TeamRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/service/PictureService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/service/PlayerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/service/TeamService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/service/impl/PictureServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/service/impl/PlayerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/service/impl/TeamServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/util/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/util/MessageName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/util/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/util/ValidationUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/util/impl/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/util/impl/MessageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/util/impl/ValidationUtilImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/web/controllers/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/web/controllers/ExportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/web/controllers/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/web/controllers/ImportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/files/json/players.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/files/xml/pictures.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/files/xml/teams.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/export/export-players-with-salary-bigger.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/export/export-team-players.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/base-layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/json/import-json.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/json/import-players.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/xml/import-pictures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/xml/import-teams.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/xml/import-xml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/softuni/exam/ExamApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/files/json/players.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/files/xml/pictures.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/files/xml/teams.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/export/export-players-with-salary-bigger.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/export/export-team-players.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/fragments/base-layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/fragments/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/fragments/head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/fragments/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/json/import-json.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/json/import-players.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/xml/import-pictures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/xml/import-teams.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/xml/import-xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04 Java DB Spring Data Retake Exam - 03 Apr 2020/doc/~$rline_Problem Description.docx" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/doc/Hiberspring Inc._Problem Description.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/HiberSpringApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/common/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/config/ApplicationBeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/dtos/BranchSeedDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/dtos/EmployeeCardsSeedDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/dtos/EmployeeListViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/dtos/EmployeeSeedDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/dtos/EmployeeSeedRootDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/dtos/ProductSeedDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/dtos/ProductSeedRootDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/dtos/TownSeedDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/entities/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/entities/Branch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/entities/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/entities/EmployeeCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/entities/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/domain/entities/Town.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/repository/BranchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/repository/EmployeeCardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/repository/TownRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/service/BranchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/service/EmployeeCardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/service/TownService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/service/impl/BranchServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/service/impl/EmployeeCardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/service/impl/TownServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/util/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/util/MessageName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/util/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/util/ValidationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/util/impl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/util/impl/MessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/util/impl/ValidationUtilImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/web/controllers/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/web/controllers/ExportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/web/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/java/hiberspring/web/controllers/ImportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/files/branches.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/files/employee-cards.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/files/employees.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/files/products.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/files/towns.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/templates/export/export-productive-employees.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/templates/fragments/base-layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/templates/fragments/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/templates/json/import-branches.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/templates/json/import-employee-cards.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/templates/json/import-json.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/templates/json/import-towns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/templates/xml/import-employees.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/templates/xml/import-products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/src/main/resources/templates/xml/import-xml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/files/branches.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/files/employee-cards.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/files/employees.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/files/products.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/files/towns.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/templates/export/export-productive-employees.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/templates/fragments/base-layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/templates/fragments/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/templates/fragments/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/templates/fragments/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/templates/json/import-branches.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/templates/json/import-employee-cards.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/templates/json/import-json.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/templates/json/import-towns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/templates/xml/import-employees.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/templates/xml/import-products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018/target/classes/templates/xml/import-xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/06b1f3d6-345a-4dd0-81f4-5400c9be5aeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/06b1f3d6-345a-4dd0-81f4-5400c9be5aeb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/dtos/PlayerSeedDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/dtos/PlayerSeedDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/util/impl/MessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/util/impl/MessageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Presentations/SpringData.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Presentations/SpringData.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +182,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/softuni/exam/util" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../07 Java DB Advanced Exam - 20 Dec 2018" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -190,10 +199,19 @@
       <recent name="softuni.exam.config" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="ExamApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="exam" />
+  <component name="RunManager" selected="Spring Boot.ExamApplication">
+    <configuration name="ExamApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="06 Java DB Advanced Exam - 28 Jul 2019" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="softuni.exam.ExamApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExamApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="06 Java DB Advanced Exam - 28 Jul 2019" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="softuni.exam.ExamApplication" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -208,6 +226,8 @@
       <option name="presentableId" value="Default" />
       <updated>1648461694207</updated>
       <workItem from="1648461695715" duration="9170000" />
+      <workItem from="1648628260328" duration="694000" />
+      <workItem from="1648794186887" duration="3828000" />
     </task>
     <servers />
   </component>

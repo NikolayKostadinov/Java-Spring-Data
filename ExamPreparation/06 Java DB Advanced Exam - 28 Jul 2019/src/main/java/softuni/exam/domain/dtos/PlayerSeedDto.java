@@ -1,5 +1,6 @@
 package softuni.exam.domain.dtos;
 
+import softuni.exam.domain.entities.enums.Position;
 import softuni.exam.util.MessageName;
 
 import javax.validation.constraints.*;
@@ -16,7 +17,7 @@ public class PlayerSeedDto {
 
     private BigDecimal salary;
 
-    private String position;
+    private Position position;
 
     private PlayerPictureDto picture;
 
@@ -60,8 +61,12 @@ public class PlayerSeedDto {
     /**
      * A ENUM (required).
      */
-    @Pattern(regexp = "^(GK|CB|LB|RB|LWB|RWB|SW|DM|CM|AM|LW|RW|WF|CF|RM|LM|ST){1}$")
-    public String getPosition() {
+//    @Pattern(regexp = "^(GK|CB|LB|RB|LWB|RWB|SW|DM|CM|AM|LW|RW|WF|CF|RM|LM|ST){1}$")
+//    public String getPosition() {
+//        return position;
+//    }
+    @NotNull
+    public Position getPosition() {
         return position;
     }
 

@@ -9,6 +9,8 @@ import softuni.exam.util.MessageService;
 @Service
 @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class MessageServiceImpl implements MessageService {
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_RED = "\u001B[31m";
 
     @Override
     public <T> String getMessage(T dto, boolean isValid) {
@@ -19,8 +21,12 @@ public class MessageServiceImpl implements MessageService {
         if (isValid) {
             message = String.format("Successfully imported %s %s", entityName, dto.toString());
         } else {
-            message = String.format("Invalid %s", entityName);
+            message = getRedMessage(String.format("Invalid %s", entityName));
         }
         return message;
+    }
+
+    private String getRedMessage(String message){
+        return String.format("%s%s%s", ANSI_RED, message, ANSI_RESET);
     }
 }
