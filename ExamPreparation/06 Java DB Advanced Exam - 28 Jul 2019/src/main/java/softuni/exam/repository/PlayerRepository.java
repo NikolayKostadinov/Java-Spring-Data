@@ -9,7 +9,6 @@ import java.util.List;
 
 @Repository
 public interface PlayerRepository extends JpaRepository<Player, Integer> {
-
     List<Player> findAllByTeamNameOrderByIdAsc(String name);
     List<Player> findAllBySalaryGreaterThanOrderBySalaryDesc(BigDecimal salary);
 }
