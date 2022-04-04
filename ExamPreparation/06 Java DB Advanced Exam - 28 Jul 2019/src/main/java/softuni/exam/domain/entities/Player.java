@@ -43,7 +43,7 @@ public class Player extends BaseEntity{
     /**
      * A Picture entity (required).
      */
-    @ManyToOne(optional = false)
+    @ManyToOne(optional = false, cascade = CascadeType.MERGE)
     private Picture picture;
 
     /**

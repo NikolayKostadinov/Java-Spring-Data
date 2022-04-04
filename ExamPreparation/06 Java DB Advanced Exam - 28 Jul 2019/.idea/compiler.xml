@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="exam" />
+        <module name="06 Java DB Advanced Exam - 28 Jul 2019" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="06 Java DB Advanced Exam - 28 Jul 2019" options="-parameters" />
       <module name="exam" options="-parameters" />
     </option>
   </component>

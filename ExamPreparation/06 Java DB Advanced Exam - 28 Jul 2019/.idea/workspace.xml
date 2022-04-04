@@ -5,7 +5,114 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb4105c1-2d22-46a0-91c2-5103b134d8ea" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/06b1f3d6-345a-4dd0-81f4-5400c9be5aeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/06b1f3d6-345a-4dd0-81f4-5400c9be5aeb.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/ExamApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/config/ApplicationBeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/dto/AgentSeedDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/dto/ApartmentSeedDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/dto/ApartmentSeedRootDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/dto/OfferAgentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/dto/OfferApartmentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/dto/OfferListDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/dto/OfferSeedDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/dto/OfferSeedRootDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/dto/TownSeedDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/entity/Agent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/entity/Apartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/entity/Offer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/entity/Town.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/models/entity/enums/ApartmentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/repository/AgentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/repository/ApartmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/repository/OfferRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/repository/TownRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/service/AgentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/service/ApartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/service/OfferService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/service/TownService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/service/impl/AgentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/service/impl/ApartmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/service/impl/OfferServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/service/impl/TownServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/util/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/util/MessageName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/util/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/util/ValidationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/util/impl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/util/impl/MessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/util/impl/ValidationUtilImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/web/controllers/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/web/controllers/ExportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/web/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/java/softuni/exam/web/controllers/ImportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/files/json/agents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/files/json/towns.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/files/xml/apartments.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/files/xml/offers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/static/pics/background1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/static/pics/house.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/static/pics/inner-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/templates/export/export-offers-by-area-then-price.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/templates/fragments/base-layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/templates/fragments/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/templates/json/import-agents.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/templates/json/import-json.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/templates/json/import-towns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/templates/xml/import-apartments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/templates/xml/import-offers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/main/resources/templates/xml/import-xml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/src/test/java/softuni/exam/ExamApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/files/json/agents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/files/json/towns.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/files/xml/apartments.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/files/xml/offers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/static/pics/background1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/static/pics/house.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/static/pics/inner-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/templates/export/export-offers-by-area-then-price.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/templates/fragments/base-layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/templates/fragments/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/templates/fragments/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/templates/fragments/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/templates/json/import-agents.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/templates/json/import-json.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/templates/json/import-towns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/templates/xml/import-apartments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/templates/xml/import-offers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FinalExam/target/classes/templates/xml/import-xml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Presentations/~$ringData.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../05 Java DB Spring Data Exam - 29 Mar 2020/RealDeal/doc/~$al Deal_Problem Description.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/entities/Player.java" afterDir="false" />
+>>>>>>> 8f0f8805da2b83e06778c8c330b9112db7e52473
       <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/repository/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/repository/PlayerRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +183,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../04 Java DB Spring Data Retake Exam - 03 Apr 2020" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../FinalExam" />
+>>>>>>> 8f0f8805da2b83e06778c8c330b9112db7e52473
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -93,10 +204,19 @@
       <recent name="softuni.exam.config" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="ExamApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="exam" />
+  <component name="RunManager" selected="Spring Boot.ExamApplication">
+    <configuration name="ExamApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="06 Java DB Advanced Exam - 28 Jul 2019" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="softuni.exam.ExamApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExamApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="06 Java DB Advanced Exam - 28 Jul 2019" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="softuni.exam.ExamApplication" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,7 +231,18 @@
       <option name="presentableId" value="Default" />
       <updated>1648461694207</updated>
       <workItem from="1648461695715" duration="9170000" />
+<<<<<<< HEAD
       <workItem from="1649054312959" duration="246000" />
+=======
+      <workItem from="1648628260328" duration="694000" />
+      <workItem from="1648794186887" duration="3828000" />
+      <workItem from="1648814436317" duration="101000" />
+      <workItem from="1648814834261" duration="43000" />
+      <workItem from="1648815023213" duration="3000" />
+      <workItem from="1648817471345" duration="70000" />
+      <workItem from="1648817575619" duration="6000" />
+      <workItem from="1648878772976" duration="5965000" />
+>>>>>>> 8f0f8805da2b83e06778c8c330b9112db7e52473
     </task>
     <servers />
   </component>
