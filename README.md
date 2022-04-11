@@ -10,3 +10,5 @@
 * Изграждане на връзки между приложение и база данни
 * Използване на подхода Code First
 * Работа с XML и JSON формати на данни
+
+[!Certicicate](https://github.com/NikolayKostadinov/Java-Spring-Data/blob/main/FinalExam/Spring%20Data%20-%20February%202022%20-%20Certificate.jpeg)
