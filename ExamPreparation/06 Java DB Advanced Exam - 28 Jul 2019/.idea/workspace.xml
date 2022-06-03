@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb4105c1-2d22-46a0-91c2-5103b134d8ea" name="Changes" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/06b1f3d6-345a-4dd0-81f4-5400c9be5aeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/06b1f3d6-345a-4dd0-81f4-5400c9be5aeb.xml" afterDir="false" />
+=======
       <change afterPath="$PROJECT_DIR$/../../FinalExam/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../FinalExam/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../FinalExam/.idea/dataSources.xml" afterDir="false" />
@@ -109,6 +112,7 @@
       <change beforePath="$PROJECT_DIR$/../05 Java DB Spring Data Exam - 29 Mar 2020/RealDeal/doc/~$al Deal_Problem Description.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/domain/entities/Player.java" afterDir="false" />
+>>>>>>> 8f0f8805da2b83e06778c8c330b9112db7e52473
       <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/repository/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/repository/PlayerRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +183,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../04 Java DB Spring Data Retake Exam - 03 Apr 2020" />
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../FinalExam" />
+>>>>>>> 8f0f8805da2b83e06778c8c330b9112db7e52473
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -223,6 +231,9 @@
       <option name="presentableId" value="Default" />
       <updated>1648461694207</updated>
       <workItem from="1648461695715" duration="9170000" />
+<<<<<<< HEAD
+      <workItem from="1649054312959" duration="246000" />
+=======
       <workItem from="1648628260328" duration="694000" />
       <workItem from="1648794186887" duration="3828000" />
       <workItem from="1648814436317" duration="101000" />
@@ -231,6 +242,7 @@
       <workItem from="1648817471345" duration="70000" />
       <workItem from="1648817575619" duration="6000" />
       <workItem from="1648878772976" duration="5965000" />
+>>>>>>> 8f0f8805da2b83e06778c8c330b9112db7e52473
     </task>
     <servers />
   </component>
