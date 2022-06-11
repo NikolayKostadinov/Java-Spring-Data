@@ -83,7 +83,6 @@ public class OfferServiceImpl implements OfferService {
         }
         return message;
     }
-
     @Override
     public String exportOffers() {
         return repository.findAllByApartmentApartmentTypeOrderByApartmentAreaDescPriceAsc(ApartmentType.three_rooms)
